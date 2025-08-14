@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample web page demonstrating semantic HTML5 structure, accessibility, and SEO best practices.">
+    <title>Semantic HTML5 Example</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#home" accesskey="h">Home</a></li>
+                <li><a href="#about" accesskey="a">About</a></li>
+                <li><a href="#contact" accesskey="c">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 id="home">Welcome to Semantic HTML5 Example</h1>
+    </header>
+    <main>
+        <section aria-labelledby="about">
+            <h2 id="about">About This Page</h2>
+            <p>
+                This page demonstrates the use of semantic HTML5 elements, accessibility features, and SEO-friendly content.
+            </p>
+        </section>
+        <section aria-labelledby="features">
+            <h2 id="features">Key Features</h2>
+            <ul>
+                <li>Semantic structure with <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code></li>
+                <li>Logical heading hierarchy using <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code></li>
+                <li>Accessibility enhancements (ARIA labels, access keys, alt text)</li>
+                <li>SEO-friendly metadata and descriptive content</li>
+            </ul>
+        </section>
+        <section aria-labelledby="contact">
+            <h2 id="contact">Contact</h2>
+            <form aria-label="Contact Form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Semantic HTML5 Example. All rights reserved.</p>
+    </footer>
+</body>
+</html>
